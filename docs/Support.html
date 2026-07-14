@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>IFC IDS Creator — Support</title>
+
+  <style>
+    :root {
+      --background: #070b18;
+      --card: rgba(20, 30, 65, 0.82);
+      --card-strong: rgba(24, 36, 78, 0.94);
+      --border: rgba(112, 168, 255, 0.20);
+      --text: #f5f7ff;
+      --secondary: #aab6d9;
+      --cyan: #21d4fd;
+      --blue: #478cff;
+      --purple: #9d4edd;
+      --warning: #f6b94a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(33, 212, 253, 0.14), transparent 34%),
+        radial-gradient(circle at 90% 18%, rgba(157, 78, 221, 0.17), transparent 36%),
+        linear-gradient(180deg, #0b1228 0%, var(--background) 100%);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .hero,
+    .card {
+      border: 1px solid var(--border);
+      background: var(--card);
+      box-shadow:
+        0 18px 60px rgba(0, 0, 0, 0.28),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 24px;
+    }
+
+    .hero {
+      padding: 36px;
+      margin-bottom: 22px;
+      background:
+        linear-gradient(135deg, rgba(33, 212, 253, 0.10), rgba(157, 78, 221, 0.13)),
+        var(--card-strong);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      line-height: 1.08;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .lead {
+      color: var(--secondary);
+      font-size: 1.1rem;
+      max-width: 720px;
+    }
+
+    .card {
+      padding: 28px;
+      margin-top: 18px;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.3rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .note {
+      border-left: 4px solid var(--warning);
+      padding: 14px 16px;
+      background: rgba(246, 185, 74, 0.08);
+      border-radius: 8px;
+      color: var(--secondary);
+    }
+
+    .contact {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white;
+      font-weight: 750;
+      margin-top: 4px;
+    }
+
+    .contact:hover,
+    .contact:focus {
+      text-decoration: none;
+      filter: brightness(1.08);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--secondary);
+      font-size: 0.9rem;
+      margin-top: 34px;
+    }
+
+    @media (max-width: 620px) {
+      .wrap {
+        padding-top: 24px;
+      }
+
+      .hero,
+      .card {
+        border-radius: 19px;
+      }
+
+      .hero {
+        padding: 26px 22px;
+      }
+
+      .card {
+        padding: 23px 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Support</p>
+      <h1>IFC IDS Creator</h1>
+      <p class="lead">
+        Create, edit, review, import and export Information Delivery
+        Specification files on iPhone, iPad and Mac.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Getting started</h2>
+      <ol>
+        <li>Open IFC IDS Creator and choose <strong>Create New IDS</strong>.</li>
+        <li>Enter the IDS title, purpose, project information and target IFC versions.</li>
+        <li>Add one or more specifications.</li>
+        <li>Define which IFC objects each specification applies to.</li>
+        <li>Add the properties, attributes, classifications, materials or relationships that are required.</li>
+        <li>Open <strong>Review</strong> to check deterministic errors and warnings.</li>
+        <li>Use <strong>Preview</strong> to inspect the generated IDS XML.</li>
+        <li>Use <strong>Files</strong> to export the completed <code>.ids</code> document.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Templates</h2>
+      <p>
+        The app includes editable starter templates for common information
+        requirements, including model information, doors, spaces,
+        classifications, manufacturer data, assets and FM handover.
+      </p>
+      <p class="note">
+        Templates are starting points. They should be reviewed and adapted to
+        suit the project, appointment, exchange information requirements and
+        applicable standards.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Importing an IDS file</h2>
+      <p>
+        Open <strong>Files</strong> and choose <strong>Import IDS</strong>.
+        Select a local <code>.ids</code> document using the system file picker.
+      </p>
+      <p>
+        The app will review the document before replacing the current workspace.
+        Unsupported or future content is clearly identified before conversion.
+        The original imported file can also be retained locally for exact
+        source export.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Review and export</h2>
+      <p>
+        The deterministic Review screen identifies missing or conflicting
+        authoring information before IDS export.
+      </p>
+      <ul>
+        <li><strong>IDS export:</strong> exports the structured <code>.ids</code> file.</li>
+        <li><strong>PDF Summary:</strong> creates a professional human-readable report.</li>
+        <li><strong>Markdown Summary:</strong> creates a portable text report.</li>
+        <li><strong>JSON Summary:</strong> creates a structured report for other workflows.</li>
+      </ul>
+      <p>
+        Report exports are summaries and do not replace the standards-based
+        <code>.ids</code> document.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Apple Intelligence</h2>
+      <p>
+        On supported devices and operating systems, optional Apple Intelligence
+        features can draft requirements, suggest improvements, explain rules,
+        explain review issues and summarise the project.
+      </p>
+      <p>
+        Generated content is always presented for review. AI does not export XML
+        directly and does not change the project until the user approves the
+        structured proposal.
+      </p>
+      <p>
+        When Apple Intelligence is unavailable, all manual authoring, templates,
+        review, import and export features remain available.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Troubleshooting</h2>
+
+      <h3>An IDS file cannot be exported</h3>
+      <p>
+        Open <strong>Review</strong> and resolve any blocking errors. Human-readable
+        reports can still be exported while a draft contains findings.
+      </p>
+
+      <h3>An imported file needs conversion</h3>
+      <p>
+        The file contains content the visual editor cannot preserve exactly.
+        Review the listed unsupported content before opening a converted copy.
+        The original source can remain stored locally.
+      </p>
+
+      <h3>Apple Intelligence is unavailable</h3>
+      <p>
+        Apple Intelligence requires a supported device, operating system and
+        enabled system model. Continue using the manual builder and templates,
+        or check the device's Apple Intelligence settings.
+      </p>
+
+      <h3>The system save or share panel does not show “.ids”</h3>
+      <p>
+        Apple system panels may display only the filename stem or a generic file
+        description. The exported file itself retains the correct
+        <code>.ids</code> extension.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Important distinction</h2>
+      <p>
+        IFC IDS Creator is an IDS authoring application. It creates and reviews
+        the requirements document itself.
+      </p>
+      <p>
+        It does not validate an IFC model against an IDS. Use a dedicated IFC IDS
+        validation application for model checking.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact support</h2>
+      <p>
+        Include the device type, operating-system version, a description of the
+        problem and the steps needed to reproduce it. Do not email confidential
+        project files unless specifically requested.
+      </p>
+      <a class="contact" href="mailto:jamiepward@googlemail.com?subject=IFC%20IDS%20Creator%20Support">
+        Email support
+      </a>
+    </section>
+
+    <footer>
+      <p>
+        <a href="Privacy.html">Privacy Policy</a>
+      </p>
+      <p>© 2026 Jamie Ward. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
